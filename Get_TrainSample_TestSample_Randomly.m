@@ -1,11 +1,11 @@
 function [Train_sample,Test_sample]=Get_TrainSample_TestSample_Randomly(Sample_input,Total_index)
 %[Train_sample,Test_sample]=Get_TrainSample_TestSample_Randomly(Sample_input,Total_index)
-%根据Total_index得到随机的训练样本和剩下的测试样本
-%Sample_input--输入的总体样本
-%Total_index--随机索引
+%Total_index
+%Sample_input
+%Total_index
 
-%Train_sample--获得的训练样本
-%Test_sample--获得的测试样本
+%Train_sample
+%Test_sample
 [dim,sn,cn]=size(Sample_input);
 
 
