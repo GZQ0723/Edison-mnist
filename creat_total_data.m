@@ -1,10 +1,9 @@
-clc;clear;
-%%    生成图片集下的训练矩阵   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+clc;clear;   
 strpath = fullfile('E:','data','orl','orl_train','orl_train_400');
-files = dir([strpath '\*.bmp']); % 获取指定路径下的所有png文件信息
-fileNum = length(files); % 个数
+files = dir([strpath '\*.bmp']); 
+fileNum = length(files); 
 for i = 1:fileNum
-img = imread([strpath '\' files(i).name]); % 读取完全路径下的文件
+img = imread([strpath '\' files(i).name]); 
 img = imresize(img,[28 28]);
 img=double(rgb2gray(img));
 [m,n]=size(img);
